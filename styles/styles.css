@@ -892,12 +892,48 @@ address {
   color: var(--placeholder-color);
 }
 
+.check-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
 .checkbox-agree {
   display: flex;
   align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
 }
 
-.checkbox-agree::before {
+.checkbox-agree .icon-wrapper {
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-agree .agree-icon {
+  fill: transparent;
+}
+
+.check-line input:checked + .checkbox-agree .icon-wrapper {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.check-line input:checked + .checkbox-agree .agree-icon {
+  fill: var(--primary-white-logo-color);
+}
+
+/* .checkbox-agree::before {
   content: ' ';
   display: flex;
   margin-right: 8px;
@@ -916,11 +952,11 @@ address {
   background-image: url(../images/check-mark.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-.check-line {
+/* .check-line {
   margin-bottom: 30px;
-}
+} */
 
 .modal-btn {
   position: absolute;
