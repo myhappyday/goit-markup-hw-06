@@ -933,6 +933,15 @@ address {
   fill: var(--primary-white-logo-color);
 }
 
+.agree-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
 /* .checkbox-agree::before {
   content: ' ';
   display: flex;
