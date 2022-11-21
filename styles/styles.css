@@ -10,6 +10,8 @@
   --primary-white-logo-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --footer-icon-bg-color: rgba(255, 255, 255, 0.1);
+  --footer-form-border-color: rgba(255, 255, 255, 0.3);
+  --footer-placeholder-color: rgba(255, 255, 255, 0.6);
   --primary-border-color: #eeeeee;
   --second-border-color: #ececec;
   --form-border-color: rgba(33, 33, 33, 0.2);
@@ -608,6 +610,65 @@ address {
   fill: currentColor;
 }
 
+.footer-submit {
+  margin-top: 12px;
+  margin-left: auto;
+}
+
+.email-submit {
+  display: flex;
+}
+
+.email-form input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 1px solid var(--footer-form-border-color);
+  border-radius: 4px;
+  padding: 15px 16px;
+  color: var(--primary-white-logo-color);
+  outline: transparent;
+}
+
+.email-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--footer-placeholder-color);
+}
+
+.submit-btn {
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-logo-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-icon {
+  fill: var(--primary-white-logo-color);
+  margin-left: 10px;
+}
+
 /* -------------------- Portfolio styles --------------------*/
 
 .portfolio {
@@ -942,35 +1003,9 @@ address {
   color: var(--accent-color);
 }
 
-/* .checkbox-agree::before {
-  content: ' ';
-  display: flex;
-  margin-right: 8px;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  transition-property: background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.check-line input:checked + .checkbox-agree::before {
-  background-color: var(--accent-color);
-  border: none;
-  background-image: url(../images/check-mark.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* .check-line {
-  margin-bottom: 30px;
-} */
-
 .modal-btn {
   position: absolute;
   left: 50%;
-  /* bottom: 0; */
   transform: translateX(-50%);
   min-width: 200px;
   height: 50px;
